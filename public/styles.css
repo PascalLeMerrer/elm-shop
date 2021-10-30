@@ -1,0 +1,124 @@
+body {
+    background-color: #f2f2f2;
+    font-family: arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    background: #047ca2;
+    box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
+    height: 2rem;
+    margin: 0;
+    padding: 0.5rem;
+
+}
+
+header h1 {
+    color: white;
+    font-weight: 400;
+    font-size: 120%;
+}
+
+main {
+     align-items: center;
+
+     display: flex;
+     flex-direction: row;
+     width: 100%;
+     height: calc(100vh - 2rem);
+}
+
+form {
+     align-items: center;
+     display: flex;
+     flex-direction: column;
+     margin: auto;
+}
+
+.form-item-1column {
+    display: flex;
+    flex: 1
+    margin-bottom: 0.75em;
+}
+.form-item-2columns {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.75em;
+}
+
+.form-item-2columns > * {
+    width: 50%;
+    margin: 0.5rem;
+    text-align: right;
+}
+
+.form-item-text {
+    padding: 0.4rem;
+}
+
+fieldset {
+    background-color: white;
+    border-radius: 4px;
+    border: 1px solid #888;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+fieldset:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+input {
+    border: 2px solid #ddd;
+    box-shadow: none;
+    font-size: 100%;
+    border-radius: 4px;
+    padding: 0.25em;
+}
+
+.notification-error {
+    background-color: #f7b0b0;
+    border: 1px solid #8e2d2d;
+    border-radius: 4px;
+    color: #8e2d2d;
+    padding: 1rem;
+    position: relative;
+    width:80%;
+    margin: 2rem auto;
+}
+
+.button-close span{
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -54%);
+}
+.button-close {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background-color: #d84747;
+    color: #eee;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+    border: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+}
+
+.button-close:hover {
+    background-color: #ce5252;
+    color: #fff;
+}
